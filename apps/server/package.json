@@ -7,7 +7,9 @@
     "check-types": "tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
     "dev": "bun run --hot src/index.ts",
-    "start": "bun run dist/index.js"
+    "start": "bun run dist/index.js",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "dependencies": {
     "hono": "catalog:",
@@ -21,8 +23,9 @@
     "@finance-tracker-trpc/db": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "catalog:",
+    "@repo/eslint-config": "workspace:*",
     "@types/bun": "^1.2.6",
-    "tsdown": "catalog:"
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
   }
 }

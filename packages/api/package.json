@@ -12,9 +12,12 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
     "tsdown": "catalog:"
   },
   "peerDependencies": {

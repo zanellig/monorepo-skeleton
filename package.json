@@ -16,16 +16,19 @@
     "db:push": "turbo -F @finance-tracker-trpc/db db:push",
     "db:studio": "turbo -F @finance-tracker-trpc/db db:studio",
     "db:generate": "turbo -F @finance-tracker-trpc/db db:generate",
-    "db:migrate": "turbo -F @finance-tracker-trpc/db db:migrate"
+    "db:migrate": "turbo -F @finance-tracker-trpc/db db:migrate",
+    "auth:generate": "turbo -F @finance-tracker-trpc/auth auth:generate",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix"
   },
   "dependencies": {
     "dotenv": "^17.2.2",
     "zod": "^4.1.11"
   },
   "devDependencies": {
-    "turbo": "^2.5.4",
+    "@types/bun": "^1.2.6",
     "tsdown": "^0.15.5",
-    "@types/bun": "^1.2.6"
+    "turbo": "^2.5.4"
   },
   "packageManager": "pnpm@10.13.1"
 }

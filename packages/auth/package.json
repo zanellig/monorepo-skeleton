@@ -12,7 +12,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsdown",
+    "build": "BETTER_AUTH_TELEMETRY=0 tsdown",
     "auth:generate": "pnpx @better-auth/cli generate --output ../db/src/schema/auth.ts --config ./src/index.ts",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"

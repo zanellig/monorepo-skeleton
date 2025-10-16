@@ -9,6 +9,7 @@ export const auth = betterAuth({
     provider: "mysql",
     schema: schema,
   }),
+  telemetry: { enabled: false, debug: true },
   plugins: [admin(), anonymous(), username()],
   trustedOrigins: [process.env.CORS_ORIGIN || ""],
   emailAndPassword: {

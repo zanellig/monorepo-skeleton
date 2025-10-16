@@ -1,5 +1,5 @@
 {
-  "name": "@finance-tracker-trpc/db",
+  "name": "@packages/db",
   "type": "module",
   "exports": {
     ".": {
@@ -21,7 +21,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@packages/eslint-config": "workspace:*",
     "drizzle-kit": "^0.31.2",
     "tsdown": "catalog:"
   },

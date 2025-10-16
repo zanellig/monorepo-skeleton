@@ -1,4 +1,4 @@
-import libraryConfig from "@repo/eslint-config/library";
+import libraryConfig from "@packages/eslint-config/library";
 
 /** @type {import("eslint").Linter.Config} */
 export default libraryConfig;

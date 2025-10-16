@@ -1,5 +1,5 @@
 {
-  "name": "finance-tracker-trpc",
+  "name": "root",
   "private": true,
   "type": "module",
   "workspaces": [
@@ -13,11 +13,11 @@
     "dev:native": "turbo -F native dev",
     "dev:web": "turbo -F web dev",
     "dev:server": "turbo -F server dev",
-    "db:push": "turbo -F @finance-tracker-trpc/db db:push",
-    "db:studio": "turbo -F @finance-tracker-trpc/db db:studio",
-    "db:generate": "turbo -F @finance-tracker-trpc/db db:generate",
-    "db:migrate": "turbo -F @finance-tracker-trpc/db db:migrate",
-    "auth:generate": "turbo -F @finance-tracker-trpc/auth auth:generate",
+    "db:push": "turbo -F @packages/db db:push",
+    "db:studio": "turbo -F @packages/db db:studio",
+    "db:generate": "turbo -F @packages/db db:generate",
+    "db:migrate": "turbo -F @packages/db db:migrate",
+    "auth:generate": "turbo -F @packages/auth auth:generate",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix"
   },

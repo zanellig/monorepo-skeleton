@@ -1,7 +1,7 @@
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
-import { db } from "@finance-tracker-trpc/db";
-import * as schema from "@finance-tracker-trpc/db/schema/auth";
+import { db } from "@packages/db";
+import * as schema from "@packages/db/schema/auth";
 import { admin, anonymous, username } from "better-auth/plugins";
 
 export const auth = betterAuth({

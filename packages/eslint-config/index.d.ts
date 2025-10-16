@@ -1,21 +1,21 @@
-import type { Linter } from 'eslint';
+import type { Linter } from "eslint";
 
-declare module '@repo/eslint-config/base' {
+declare module "@packages/eslint-config/base" {
   const config: Linter.Config[];
   export default config;
 }
 
-declare module '@repo/eslint-config/library' {
+declare module "@packages/eslint-config/library" {
   const config: Linter.Config[];
   export default config;
 }
 
-declare module '@repo/eslint-config/next' {
+declare module "@packages/eslint-config/next" {
   const config: Linter.Config[];
   export default config;
 }
 
-declare module '@repo/eslint-config/drizzle' {
+declare module "@packages/eslint-config/drizzle" {
   const config: Linter.Config[];
   export default config;
 }

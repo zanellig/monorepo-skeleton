@@ -18,12 +18,12 @@
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "zod": "catalog:",
-    "@finance-tracker-trpc/api": "workspace:*",
-    "@finance-tracker-trpc/auth": "workspace:*",
-    "@finance-tracker-trpc/db": "workspace:*"
+    "@packages/api": "workspace:*",
+    "@packages/auth": "workspace:*",
+    "@packages/db": "workspace:*"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@packages/eslint-config": "workspace:*",
     "@types/bun": "^1.2.6",
     "tsdown": "catalog:",
     "typescript": "catalog:"

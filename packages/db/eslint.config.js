@@ -1,4 +1,4 @@
-import drizzleConfig from "@repo/eslint-config/drizzle";
+import drizzleConfig from "@packages/eslint-config/drizzle";
 
 /** @type {import("eslint").Linter.Config} */
 export default drizzleConfig;

@@ -1,5 +1,5 @@
 {
-  "name": "@finance-tracker-trpc/auth",
+  "name": "@packages/auth",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -18,7 +18,7 @@
     "lint:fix": "eslint src --fix"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@packages/eslint-config": "workspace:*",
     "tsdown": "catalog:"
   },
   "peerDependencies": {
@@ -28,6 +28,6 @@
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "zod": "catalog:",
-    "@finance-tracker-trpc/db": "workspace:*"
+    "@packages/db": "workspace:*"
   }
 }

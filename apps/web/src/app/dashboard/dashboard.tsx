@@ -1,11 +1,10 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth-client";
 import { useQuery } from "@tanstack/react-query";
 import { trpc } from "@/utils/trpc";
 
 export default function Dashboard({
-	session,
+	session: _session,
 }: {
 	session: typeof authClient.$Infer.Session;
 }) {

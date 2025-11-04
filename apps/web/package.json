@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NEXT_TELEMETRY_DISABLED=1 next dev --turbopack --port=3001",
     "build": "next build",
-    "start": "next start",
+    "start": "NEXT_TELEMETRY_DISABLED=1 next start -p 3001",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },

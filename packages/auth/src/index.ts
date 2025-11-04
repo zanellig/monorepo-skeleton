@@ -6,7 +6,7 @@ import { admin, anonymous, username } from "better-auth/plugins";
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
-    provider: "mysql",
+    provider: "pg",
     schema: schema,
   }),
   telemetry: { enabled: false, debug: true },

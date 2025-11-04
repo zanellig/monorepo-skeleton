@@ -14,7 +14,7 @@
   "dependencies": {
     "hono": "catalog:",
     "@trpc/server": "catalog:",
-    "@hono/trpc-server": "^0.4.0",
+    "@hono/trpc-server": "0.4.0",
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "zod": "catalog:",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@packages/eslint-config": "workspace:*",
-    "@types/bun": "^1.2.6",
+    "@types/bun": "1.2.6",
     "tsdown": "catalog:",
     "typescript": "catalog:"
   }

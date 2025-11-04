@@ -1,16 +1,15 @@
-import dotenv from "dotenv";
-
-dotenv.config({
-	path: "../../apps/server/.env",
-});
-
 import { drizzle } from "drizzle-orm/mysql2";
 import * as schema from "./schema";
 
-export const db = drizzle(process.env.DATABASE_URL!, {
-	schema,
-	mode: "default",
+const connectionString = process.env.DATABASE_URL;
+
+if (!connectionString) {
+  throw new Error("Missing environment variable: DATABASE_URL");
+}
+
+export const db = drizzle(connectionString, {
+  schema,
+  mode: "default",
 });
 
 export { schema };
-

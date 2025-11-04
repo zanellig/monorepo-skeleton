@@ -33,7 +33,6 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "dotenv": "catalog:",
     "drizzle-orm": "^0.44.2",
     "mysql2": "^3.14.0",
     "zod": "catalog:"

@@ -9,5 +9,10 @@
     },
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx"
-  }
+  },
+  "references": [
+    { "path": "../../packages/api" },
+    { "path": "../../packages/auth" },
+    { "path": "../../packages/db" }
+  ]
 }

@@ -27,6 +27,14 @@
     "declaration": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    "paths": {
+      "@packages/api": ["../../packages/api/src"],
+      "@packages/api/*": ["../../packages/api/src/*"],
+      "@packages/auth": ["../../packages/auth/src"],
+      "@packages/auth/*": ["../../packages/auth/src/*"],
+      "@packages/db": ["../../packages/db/src"],
+      "@packages/db/*": ["../../packages/db/src/*"]
+    }
   }
 }

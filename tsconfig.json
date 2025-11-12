@@ -2,15 +2,7 @@
   "extends": "./packages/typescript-config/tsconfig.base.json",
   "compilerOptions": {
     "moduleResolution": "bundler",
-    "disableSizeLimit": true,
-    "paths": {
-      "@packages/auth": ["./packages/auth/src/index.ts"],
-      "@packages/db": ["./packages/db/src/index.ts"],
-      "@packages/api": ["./packages/api/src/index.ts"],
-      "@packages/auth/*": ["./packages/auth/src/*"],
-      "@packages/db/*": ["./packages/db/src/*"],
-      "@packages/api/*": ["./packages/api/src/*"]
-    }
+    "disableSizeLimit": true
   },
   "exclude": ["**/dist/**/*", "**/node_modules/**/*"]
 }

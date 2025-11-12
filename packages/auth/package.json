@@ -1,20 +1,12 @@
 {
   "name": "@packages/auth",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "development": "./src/index.ts",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
-    },
-    "./*": {
-      "types": "./dist/*.d.ts",
-      "development": "./src/*.ts",
-      "import": "./dist/*.js",
-      "default": "./dist/*.js"
-    }
-  },
   "type": "module",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "BETTER_AUTH_TELEMETRY=0 tsdown",
     "auth:generate": "BETTER_AUTH_TELEMETRY=0 pnpx @better-auth/cli generate --output ../db/src/schema/auth.ts --config ./src/index.ts",

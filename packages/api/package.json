@@ -1,23 +1,12 @@
 {
   "name": "@packages/api",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "development": "./src/index.ts",
-      "default": "./dist/index.js"
-    },
-    "./context": {
-      "types": "./dist/context.d.ts",
-      "development": "./src/context.ts",
-      "default": "./dist/context.js"
-    },
-    "./routers": {
-      "types": "./dist/routers/index.d.ts",
-      "development": "./src/routers/index.ts",
-      "default": "./dist/routers/index.js"
-    }
-  },
   "type": "module",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsdown",
     "lint": "eslint src",

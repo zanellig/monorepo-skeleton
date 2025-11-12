@@ -6,7 +6,12 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@packages/*": ["../../packages/*"]
+      "@packages/api": ["../../packages/api/src"],
+      "@packages/api/*": ["../../packages/api/src/*"],
+      "@packages/auth": ["../../packages/auth/src"],
+      "@packages/auth/*": ["../../packages/auth/src/*"],
+      "@packages/db": ["../../packages/db/src"],
+      "@packages/db/*": ["../../packages/db/src/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx"

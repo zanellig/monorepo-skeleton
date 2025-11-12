@@ -7,15 +7,15 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./src/index.ts"
+      "default": "./dist/index.js"
     },
     "./context": {
       "types": "./dist/context.d.ts",
-      "default": "./src/context.ts"
+      "default": "./dist/context.js"
     },
     "./routers": {
       "types": "./dist/routers/index.d.ts",
-      "default": "./src/routers/index.ts"
+      "default": "./dist/routers/index.js"
     }
   },
   "scripts": {

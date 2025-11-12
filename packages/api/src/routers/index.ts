@@ -1,8 +1,12 @@
+import { db, schema } from "@packages/db";
 import { protectedProcedure, publicProcedure, router } from "../index";
 
 export const appRouter = router({
-  healthCheck: publicProcedure.query(() => {
-    return "OK";
+  health: router({
+    db: publicProcedure.query(async () => {
+      const res = await db.select().from(schema.health);
+      return res;
+    }),
   }),
   privateData: protectedProcedure.query(({ ctx }) => {
     return {

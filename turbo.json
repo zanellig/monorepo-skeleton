@@ -2,7 +2,12 @@
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
   "globalDependencies": ["**/.env.*"],
-  "globalEnv": ["CORS_ORIGIN", "BETTER_AUTH_URL", "BETTER_AUTH_SECRET"],
+  "globalEnv": [
+    "CORS_ORIGIN",
+    "BETTER_AUTH_URL",
+    "BETTER_AUTH_SECRET",
+    "DATABASE_URL"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],

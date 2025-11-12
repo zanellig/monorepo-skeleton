@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { trpcServer } from "@hono/trpc-server";
-import { createContext } from "@packages/api/context";
 import { appRouter } from "@packages/api/routers";
+import { createContext } from "@packages/api/context";
 import { auth } from "@packages/auth";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
@@ -31,9 +31,5 @@ app.use(
     },
   })
 );
-
-app.get("/", async (c) => {
-  return c.text("OK");
-});
 
 export default app;

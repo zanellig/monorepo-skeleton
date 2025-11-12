@@ -13,7 +13,7 @@ app.use(logger());
 app.use(
   "/*",
   cors({
-    origin: process.env.CORS_ORIGIN || "",
+    origin: (origin) => (origin === process.env.CORS_ORIGIN ? origin : "*"),
     allowMethods: ["GET", "POST", "OPTIONS"],
     allowHeaders: ["Content-Type", "Authorization"],
     credentials: true,

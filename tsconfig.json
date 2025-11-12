@@ -1,4 +1,10 @@
 {
   "extends": "./packages/typescript-config/tsconfig.base.json",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "paths": {
+      "@packages/*": ["./packages/*/src"]
+    }
+  },
   "exclude": ["**/dist/**/*", "**/node_modules/**/*"]
 }

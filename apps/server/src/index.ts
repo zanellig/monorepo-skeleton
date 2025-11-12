@@ -9,11 +9,19 @@ import { logger } from "hono/logger";
 
 const app = new Hono();
 
+function validateOrigin(origin: string) {
+  const cleanOrigin = origin.endsWith("/") ? origin.slice(0, -1) : origin;
+  const cleanEnvOrigin = process.env.CORS_ORIGIN?.endsWith("/")
+    ? process.env.CORS_ORIGIN.slice(0, -1)
+    : process.env.CORS_ORIGIN;
+  return cleanOrigin === cleanEnvOrigin;
+}
+
 app.use(logger());
 app.use(
   "/*",
   cors({
-    origin: (origin) => (origin === process.env.CORS_ORIGIN ? origin : "*"),
+    origin: (origin) => (validateOrigin(origin) ? origin : "*"),
     allowMethods: ["GET", "POST", "OPTIONS"],
     allowHeaders: ["Content-Type", "Authorization"],
     credentials: true,

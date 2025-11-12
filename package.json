@@ -16,6 +16,7 @@
     "dev:server": "turbo -F server dev",
     "dev:pkgs": "turbo build --parallel --filter=./packages/*",
     "db:push": "turbo -F @packages/db db:push",
+    "db:pull": "turbo -F @packages/db db:pull",
     "db:studio": "turbo -F @packages/db db:studio",
     "db:generate": "turbo -F @packages/db db:generate",
     "db:migrate": "turbo -F @packages/db db:migrate",

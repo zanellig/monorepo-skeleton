@@ -1,5 +1,11 @@
 import { defineConfig } from "drizzle-kit";
 
+import dotenv from "dotenv";
+
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config({ path: "../../apps/server/.env" });
+}
+
 const connectionString = process.env.DATABASE_URL;
 
 if (!connectionString) {
@@ -9,7 +15,8 @@ if (!connectionString) {
 export default defineConfig({
   schema: "./src/schema",
   out: "./src/migrations",
-  dialect: "mysql",
+  strict: true,
+  dialect: "postgresql",
   dbCredentials: {
     url: connectionString,
   },

@@ -4,6 +4,12 @@
   "main": "dist/index.js",
   "module": "src/index.ts",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist/**/*"
   ],

@@ -1,0 +1,14 @@
+{
+  "name": "@packages/typescript-config",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "tsconfig.base.json",
+    "tsconfig.backend.json"
+  ],
+  "exports": {
+    "./tsconfig.backend.json": "./tsconfig.backend.json",
+    "./tsconfig.base.json": "./tsconfig.build.json",
+    "./*": "./*"
+  }
+}

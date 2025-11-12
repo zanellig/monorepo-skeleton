@@ -1,10 +1,10 @@
-import { db, schema } from "@packages/db";
+import { getDb, schema } from "@packages/db";
 import { protectedProcedure, publicProcedure, router } from "../index";
 
 export const appRouter = router({
   health: router({
     db: publicProcedure.query(async () => {
-      const res = await db.select().from(schema.health);
+      const res = await getDb().select().from(schema.health);
       return res;
     }),
   }),

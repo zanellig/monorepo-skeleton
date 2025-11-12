@@ -26,7 +26,7 @@ const trpcClient = createTRPCClient<AppRouter>({
         process.env.NEXT_PUBLIC_SERVER_URL?.endsWith("/")
           ? process.env.NEXT_PUBLIC_SERVER_URL.slice(0, -1)
           : process.env.NEXT_PUBLIC_SERVER_URL
-      }/api/trpc`,
+      }/trpc`,
       fetch(url, options) {
         return fetch(url, {
           ...options,

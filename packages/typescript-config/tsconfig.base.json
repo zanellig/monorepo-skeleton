@@ -21,7 +21,7 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "incremental": true,
-    "declaration": false,
+    "declaration": true,
     "sourceMap": true,
     "strictNullChecks": true,
     "preserveConstEnums": true
